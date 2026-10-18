@@ -1,0 +1,11 @@
+# StudyPilot AI - runtime dependencies
+# Lower bounds are the oldest versions expected to provide the APIs used; the exact
+# versions the project was tested with are listed in docs/INSTALLATION.md.
+streamlit>=1.37
+pymupdf>=1.24
+scikit-learn>=1.3
+numpy>=1.24
+python-dotenv>=1.0
+# Neural embeddings (also installs PyTorch and Transformers). Optional at runtime:
+# if it is missing, the app automatically falls back to TF-IDF keyword matching.
+sentence-transformers>=2.7

@@ -1,0 +1,43 @@
+# Secrets and local config
+.env
+.env.*
+!.env.example
+
+# Environments and caches
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+build/
+dist/
+
+# Model caches
+.cache/
+huggingface/
+models/
+*.safetensors
+*.bin
+*.pt
+
+# Private/uploaded documents and temporary data
+uploads/
+tmp/
+temp/
+*.log
+logs/
+data/private/
+data/uploads/
+
+# Streamlit secrets
+.streamlit/secrets.toml
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

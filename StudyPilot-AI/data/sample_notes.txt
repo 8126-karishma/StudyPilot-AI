@@ -1,0 +1,61 @@
+Part 1: Python Programming Basics
+
+Python is a high-level, interpreted programming language known for its readable syntax. Python was created by Guido van Rossum and first released in 1991. Because Python code is executed line by line by an interpreter, beginners can test small ideas quickly.
+
+A variable is a named reference to a value stored in memory. In Python, a variable is created the moment a value is assigned to it, and its type is decided by the value it holds.
+
+A function is a reusable block of code that performs one specific task. Functions are defined with the def keyword, can accept parameters, and can send a result back with the return statement. Writing small functions makes programs easier to test and to read.
+
+A list is an ordered, changeable collection of items written inside square brackets. Lists keep the order in which items were added, and every item can be reached by its index, which starts at 0.
+
+A dictionary is a collection of key-value pairs that allows fast lookup by key. Keys in a dictionary must be unique and immutable, so strings and numbers are common choices.
+
+A loop is a control structure that repeats a block of code. Python offers the for loop, which walks through the items of a sequence, and the while loop, which repeats as long as a condition stays true.
+
+An exception is an error that happens while a program is running. The try and except statements let a program handle an exception gracefully instead of crashing.
+
+A module is a file of Python code that can be imported and reused in other programs. The standard library ships with many modules, such as math for numeric functions and json for reading and writing structured data.
+
+Part 2: Machine Learning Fundamentals
+
+Machine learning is a branch of artificial intelligence in which computers learn patterns from data instead of following hand-written rules. A machine learning system improves its predictions as it sees more examples.
+
+Training data is the set of examples that a model learns from. The quality and variety of training data strongly affect how well a model works on new inputs.
+
+A feature is a measurable property of an example that is given to a model as input. For a house price model, features could be the floor area, the number of rooms, and the neighbourhood.
+
+A label is the correct answer that the model is trying to predict for an example. Labels are only available in supervised problems.
+
+Supervised learning is a type of machine learning where the model learns from examples that already have labels. Classification and regression are the two main kinds of supervised learning tasks. Classification predicts a category, such as spam or not spam, while regression predicts a number, such as a price.
+
+Unsupervised learning is a type of machine learning where the model searches for structure in data that has no labels. Clustering, which groups similar examples together, is a common unsupervised task.
+
+Overfitting is a problem in which a model memorises the training data and performs poorly on new data. Overfitting often happens when a model is too complex for the amount of data available.
+
+Underfitting is a problem in which a model is too simple to capture the pattern in the data. An underfitted model performs poorly on both the training data and new data.
+
+Cross-validation is a technique that estimates how well a model will perform on unseen data by training and testing it on several different splits of the dataset. Using cross-validation gives a more reliable estimate than a single train-test split.
+
+Part 3: Neural Networks and Optimisation
+
+A neural network is a model made of layers of connected units called neurons that transform inputs into outputs. Each connection has a weight, and learning means adjusting these weights so that predictions become more accurate.
+
+Gradient descent is an optimisation algorithm that repeatedly changes the model weights in the direction that reduces the loss. The learning rate controls how large each step is. If the learning rate is too large, training can overshoot the best solution, and if it is too small, training becomes very slow.
+
+An epoch is one complete pass of the training dataset through the learning algorithm. Models are usually trained for many epochs, and the loss is checked after each one.
+
+A loss function is a formula that measures how far the predictions of a model are from the correct labels. Training tries to make the value of the loss function as small as possible.
+
+Part 4: Embeddings and Retrieval-Augmented Generation
+
+An embedding is a list of numbers that represents the meaning of a piece of text, so that texts with similar meaning get similar numbers. Sentence Transformers is a Python library that provides pretrained models for creating embeddings of sentences and paragraphs.
+
+Cosine similarity is a measure of how similar two vectors are, based on the angle between them. A cosine similarity close to 1 means the vectors point in almost the same direction, which for embeddings means the texts have similar meaning.
+
+Chunking means splitting a long document into smaller overlapping pieces before they are indexed. Overlap between neighbouring chunks helps keep sentences that fall on a boundary available in at least one chunk.
+
+Retrieval-Augmented Generation, often shortened to RAG, is a technique that first retrieves relevant passages from a document collection and then uses them as evidence when producing an answer. Because the answer is based on retrieved passages, RAG makes it possible to show the source of each statement and reduces the chance that a model invents facts.
+
+Source grounding is the practice of linking every answer to the passage and page that support it, so that a reader can check the evidence.
+
+Key facts to remember: Python lists start counting at index 0. Overfitting is reduced by using more data, simpler models, or cross-validation to detect it. RAG combines retrieval with generation.
